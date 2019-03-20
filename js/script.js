@@ -41,12 +41,7 @@ function createTweet(input) {
 
 function toggleLoader(show) {
 	var loader = document.getElementById('loader');
-
-	if(show) {
-		loader.classList.remove('hide')
-	} else {
-		loader.classList.add('hide')
-	}
+	loader.classList.toggle('hide', !show);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
